@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        System.out.println("Welcome to Bla-Blacar Applicaton\n\tYour Ride and your Choice");
+        System.out.println("Welcome to Bla-Blacar Application\n\tYour Ride and your Choice");
         String nationality = Util.enterString("Please tell us, are you a foreign or native");
 
         Scanner scanner = new Scanner(System.in);

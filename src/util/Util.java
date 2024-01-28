@@ -31,16 +31,15 @@ public class Util {
     }
 
     public static String fillTripInfo() {
-        String Location = Util.enterString("Your current Location");
-        int passenger = Util.enterInteger("How many passengers will travel?");
-        String requires = Util.enterString("Enter Requires: For example:(SMOKING-YES," +"PET-YES,Luggage)");
+        String Location = enterString("Your current Location");
+        int passenger = enterInteger("How many passengers will travel?");
+        String requires = enterString("Enter Requires: For example:(SMOKING-YES," +"PET-YES,Luggage)");
         String dateString = enterString("Enter the date of the trip (YYYY-MM-DD)");
         String timeString = enterString("Enter the time of the trip (HH:mm AM/PM)");
         return "Your destination from "+ Location + " with " + passenger +
                 " passenger and with these requires" + " "+ requires+" in "+dateString+" in "+timeString;
     }
 
-//    public static String fillTripInfo() {
         public static String enterStringWithValidation(String title, String dateFormatPattern) {
             SimpleDateFormat dateFormat = new SimpleDateFormat(dateFormatPattern);
             String userInput;
